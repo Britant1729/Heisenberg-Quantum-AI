@@ -1,726 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accepted Abstracts - International Young Quantum Scientists’ Meet 2024</title>
+    <title>Heisenberg Quantum AI</title>
     <style>
+        /* General Styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+            line-height: 1.6;
         }
+
         header {
-            background-color: #0044cc;
-            color: white;
+            background: #222;
+            color: #fff;
             padding: 20px 0;
             text-align: center;
         }
+
         header h1 {
             margin: 0;
-            font-size: 24px;
         }
-        .container {
+
+        header p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        nav {
+            background: #444;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
             padding: 20px;
-            max-width: 800px;
-            margin: auto;
-            background-color: white;
-            margin-top: 20px;
-            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
         }
-        h2 {
-            color: #003399;
-            border-bottom: 2px solid #003399;
-            padding-bottom: 10px;
+
+        section h2 {
+            color: #222;
+            border-bottom: 2px solid #444;
+            padding-bottom: 5px;
         }
-        ol {
-            padding-left: 20px;
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
         }
-        .abstract-details {
-            margin-bottom: 20px;
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
         }
-        .abstract-details h3 {
-            color: #0044cc;
+
+        footer {
+            background: #222;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .contact p {
             margin: 5px 0;
-        }
-        .abstract-details p {
-            margin: 5px 0;
-            line-height: 1.6;
         }
     </style>
 </head>
-<body>
 
+<body>
     <header>
-        <h1>Accepted Abstracts</h1>
+        <h1>Heisenberg Quantum AI</h1>
+        <p>Quantum-Inspired AI for Advanced Solutions</p>
     </header>
 
+    <nav>
+        <a href="#introduction">Introduction</a>
+        <a href="#solutions">Solutions</a>
+        <a href="#applications">Applications</a>
+        <a href="#gaps">Gaps</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
     <div class="container">
-        <ol>
-            <li>
-                <section class="abstract-details">
-                    <h2>Nayana Das</h2>
-                    <h3>Affiliation:</h3>
-                    <p>LTIMindtree</p>
-                    <h3>Title of the Talk:</h3>
-                    <p>Proposal of a User-Authenticated Device-Independent Quantum Secure Direct Communication Protocol</p>
-                    <h3>Abstract:</h3>
-                    <p>Device-independent quantum Secure Direct Communication (DI-QSDC) enhances quantum cryptography by enabling secure message transmission without depending on the trustworthiness of the devices involved. This approach mitigates risks associated with compromised or untrusted devices, which are common in traditional quantum communication.</p>
-                    <p>In this paper, we propose a novel DI-QSDC protocol, which, to the best of our knowledge, is the first of its kind to incorporate user identity authentication. This ensures the authenticity of both the sender and receiver prior to message exchange. We then discuss the security of the proposed protocol against common attacks, demonstrating that no eavesdropper gains any information from either the quantum or the classical channel. Next, we implement the protocol on IBM's quantum hardware and evaluate its performance in a realistic noisy environment. Additionally, by simulating common attack models, we showcase that the protocol is secure against any eavesdropper in the channel. These findings highlight the protocol's robust security and practical feasibility for real-world quantum communication.</p>
-                </section>
-            </li>
+        <!-- Introduction Section -->
+        <section id="introduction">
+            <h2>Introducing Heisenberg Quantum AI</h2>
+            <p>We offer quantum-inspired solutions that replace traditional neural networks in artificial intelligence with Novel Quantum/Nature-Inspired Unitary Evolutions for improved accuracy, speed, and resource efficiency.</p>
+        </section>
 
-            <!-- Additional speakers can be added here -->
-            <!-- Example for another speaker -->
-            <li>
-                <section class="abstract-details">
-                    <h2>Ikechukwu John Chukwu</h2>
-                    <h3>Affiliation:</h3>
-                    <p>Kadir Has University</p>
-                    <h3>Title of the Talk:</h3>
-                    <p>Hash-Based Cryptographic Schemes for Post-Quantum IoT Security: XMSS, SPHINCS+, and LMS</p>
-                    <h3>Abstract:</h3>
-                    <p>This paper presents a comparative analysis of three prominent hash-based cryptographic schemes: XMSS (eXtended Merkle Signature Scheme), SPHINCS+ (Stateless Practical Hash-based Incredibly Nice Cryptographic Signature), and LMS (Leighton-Micali Signature Scheme). The focus is on evaluating their efficiency, including key factors such as signature size, computational demands, and ease of implementation.</p>
-                </section>
-            </li>
-            <li>
-                <section class="abstract-details">
-                    <h2>Gururaja T.S.</h2>
-                    <h3>Affiliation:</h3>
-                    <p>SASTRA Deemed to be University, Thanjavur, Tamil Nadu </p>
-                    <h3>Title of the Talk:</h3>
-                    <p>Hash-Based Cryptographic Schemes for Post-Quantum IoT Security: XMSS, SPHINCS+, and LMS</p>
-                    <h3>Abstract:</h3>
-                    <p>We propose to develop quantum true random number generation (QTRNG) in IBM's quantum laboratory by implementing the Random Quantum Fourier Transform (RQFT) technique utilizing quantum gates. This approach overcomes the imperfections caused by noise and decoherence in quantum circuits by utilizing the quantum Fourier transform (QFT) to replace the computational basis with a Fourier basis comprising a complex superposition of qubit states. For usage in symmetric and asymmetric cryptographic applications, the RQFT-based QTRNG produces unpredictable high quality random numbers. It satisfies all the preliminary tests, Autocorrelation test, and extensive National Institute of Standards and Technology (NIST) test suites, such as SP 800-90 and SP 800-22 are used to assess the generated sequences randomness in order to guarantee their robustness and reliability.</p>
-                    <p>Keywords: RQFT, QTRNG, Quantum gates, Cryptography</p>
-                </section>
-            </li>
-            <li>
-                <section class="abstract-details">
-                    <h2>Debjyoti Biswas</h2>
-                    <h3>Affiliation:</h3>
-                    <p>IIT Madras</p>
-                    <h3>Title of the Talk:</h3>
-                    <p>Approximate quantum error correction for non-Markovian noise process</p>
-                    <h3>Abstract:</h3>
-                    <p>We prove the sufficiency of approximate quantum error correction for non-Markovian noise, with a focus on noise-adapted techniques tailored to non-Markovian amplitude damping noise. We demonstrate that a non-Markovian Petz channel can be precisely constructed to adapt to non-Markovian amplitude damping. However, implementing such a map poses practical challenges. Through numerical simulations, we show that both Markovian and non-Markovian Petz channels can correct non-Markovian errors with high fidelity. We illustrate our results using both stabilizer and non-stabilizer non-degenerate codes. Our work suggests that most existing methods, including standard and approximate (channel-adapted) quantum error correction, are ineffective against quantum non-Markovian noise. In contrast, channel-adapted methods are successful when the Petz channel is used as a universal, near-optimal recovery.</p>
-                </section>
-            </li>
-            <li>
-                <section class="abstract-details">
-                    <h2>Souradeep Sasmal</h2>
-                    <h3>Affiliation:</h3>
-                    <p>IFFS, University of Electronic Science and Technology of China, Sichuan, Chengdu, China</p>
-                    <h3>Title of the Talk:</h3>
-                    <p>Unbounded Sharing of Nonlocality Using Qubit Projective Measurements</p>
-                    <h3>Abstract:</h3>
-                    <p>It is  a common perception that a sharp projective measurement in one side of the Bell experiment destroys the entanglement of the shared state, thereby preventing the demonstration of sequential sharing of nonlocality. In contrast, we introduce a local randomness-assisted projective measurement protocol, enabling the sharing of nonlocality by an arbitrary number of sequential observers (Bobs) with a single spatially separated party Alice. Subsequently, a crucial feature of the interplay between the degrees of incompatibility of observables of both parties is revealed, enabling the unbounded sharing of nonlocality. Our findings, not only offer a new paradigm for understanding the fundamental nature of incompatibility in demonstrating quantum nonlocality but also pave a new path for various information processing tasks based on local randomness-assisted projective measurement. (arXiv:2311.07977)  </p>
-                </section>
-            </li>
-            <li>
-                <section class="abstract-details">
-                    <h2>Chiranjib Mukhopadhyay</h2>
-                    <h3>Affiliation:</h3>
-                    <p>UESTC Chengdu</p>
-                    <h3>Title of the Talk:</h3>
-                    <p>Modular Quantum Many-Body Sensors</p>
-                    <h3>Abstract:</h3>
-                    <p>Quantum many-body systems undergoing phase transitions have been proposed as probes enabling beyond-classical enhancement of sensing precision. However, this enhancement is usually limited to a very narrow region around the critical point. Here, we systematically develop a modular approach for introducing multiple phase transitions in a many-body system. This naturally allows us to enlarge the region of quantum-enhanced precision by encompassing the newly created phase boundaries. Our approach is general and can be applied to both symmetry-breaking and topological quantum sensors. In symmetry-breaking sensors, we show that the newly created critical points inherit the original universality class and a simple total magnetization measurement already suffices to locate them. In topological sensors, our modular construction creates multiple bands which leads to a rich phase diagram. In both cases, Heisenberg scaling for Hamiltonian parameter estimation is achieved at all the phase boundaries. This can be exploited to create a global sensor which significantly outperforms a uniform probe.  </p>
-                </section>
-            </li>
-            <li>
-                <section class="abstract-details">
-                    <h2>Xingjian He</h2>
-                    <h3>Affiliation:</h3>
-                    <p>University of Electronic Science and Technology of China</p>
-                    <h3>Title of the Talk:</h3>
-                    <p>Quantum-enhanced sensing via Stark localization transition</p>
-                    <h3>Abstract:</h3>
-                    <p>Gradient fields can effectively suppress particle tunneling and localize the wave function at all energy scales, a phenomenon known as Stark localization. Here, we show that Stark systems can be used as a probe for the precise measurement of gradient fields, particularly in the weak-field regime where most sensors do not operate optimally. In the extended phase, Stark probes achieve super-Heisenberg precision, which is well beyond most of the known quantum sensing schemes. In the localized phase, the precision drops in a universal way showing fast convergence to the thermodynamic limit. For single-particle probes, we show that quantum-enhanced sensitivity, with super-Heisenberg precision, can be achieved through a simple position measurement for all the eigenstates across the entire spectrum. For such probes, we have identified several critical exponents of the Stark localization transition and established their relationship. Thermal fluctuations, whose universal behavior is identified, reduce the precision from super-Heisenberg to Heisenberg, still outperforming classical sensors. Multiparticle interacting probes also achieve super-Heisenberg scaling in their extended phase, which shows even further enhancement near the transition point. Quantum-enhanced sensitivity is still achievable even when long-range interactions are taken into consideration.</p>
-                </section>
-            </li>
-            <li>
-                <section class="abstract-details">
-                    <h2>Vivek Verma</h2>
-                    <h3>Affiliation:</h3>
-                    <p>Indian Institute of Technology Roorkee</p>
-                    <h3>Title of the Talk:</h3>
-                    <p>Quantum image encryption algorithm based on 3D-BNM chaotic map</p>
-                    <h3>Abstract:</h3>
-                    <p>This study presents a novel quantum image encryption algorithm, using a 3D chaotic map and controlled qubit-level scrambling operations. The newly proposed 3D-BNM chaotic map effectively reduces the degradation of chaotic dynamics resulting from the finite word length effect. It facilitates the generation of highly unpredictable random sequences and enhances chaotic performance. The system’s efficacy is additionally enhanced by the inclusion of a SHA-256 hash function. Initially, classical plain images are converted into their quantum equivalents using the Novel Enhanced Quantum Representation (NEQR) model. The Generalized Quantum Arnold Transformation (GQAT) is then applied to disrupt the coordinate information of the quantum image. Subsequently, to diffuse the pixel values of the scrambled image, XOR operations are performed using pseudorandom sequences generated by the 3D-BNM chaotic map. Furthermore, to enhance the randomness and reduce the correlation among the pixels in the resulting cipher image, a controlled qubit-level scrambling operation is employed. The encryption process utilizes fundamental quantum gates such as C-NOT and CCNOT. Both theoretical and numerical simulations validate the effectiveness of the proposed algorithm against various statistical and differential attacks. Moreover, the proposed encryption algorithm operates with low computational complexity.</p>
-                </section>
-            </li>
-            <li>
-                <section class="abstract-details">
-                    <h2>A R Bathri Narayanan</h2>
-                    <h3>Affiliation:</h3>
-                    <p>Not Available </p>
-                    <h3>Title of the Talk:</h3>
-                    <p>Search on superconducting qubits</p>
-                    <h3>Abstract:</h3>
-                    <p>I will first discuss the basic idea of superconducting qubits. Then we try to create an analogy between superconducting qubits and Hawking radiation, which is part of my research project. Finally we end the talk with future plans and goals.</p>
-                </section>
-            </li>
-            <li>
-                <section class="abstract-details">
-                    <h2>Hrushikesh Sable</h2>
-                    <h3>Affiliation:</h3>
-                    <p>Virginia Tech</p>
-                    <h3>Title of the Talk:</h3>
-                    <p>Quantum analogue simulation of many-body supersymmetry in the XXZ model</p>
-                    <h3>Abstract:</h3>
-                    <p>Supersymmetry (SUSY), a concept originally formulated in quantum field theories, can also be studied in certain quantum mechanical models. A topological quantum number, the Witten index, characterizes these SUSY models by probing for the zero energy modes and SUSY breaking. In its original formulation, the Witten index is a mathematical object not connected to any physical observable. In this talk, I shall discuss a modified form, the normalized Witten index that we propose in our work, constructed by averaging over a distribution so that it is a physical observable. We discuss this proposal in the context of the supersymmetric XXZ model, which is one of the rare many-body systems with exact SUSY and show this model can be realized with Rydberg atoms in tweezers. In addition, we discuss the robustness of this observable against the SUSY breaking perturbations at low temperatures, which follows from the topological zero energy modes.</p>
-                </section>
-            </li>
-            <li>
-                <section class="abstract-details">
-                    <h2>Atta ur Rahman</h2>
-                    <h3>Affiliation:</h3>
-                    <p>School of Physical Sciences, University of Chinese Academy of Sciences, Beijing China</p>
-                    <h3>Title of the Talk:</h3>
-                    <p>Emerging quantum ridges and dynamic patterns in diverse field landscapes</p>
-                    <h3>Abstract:</h3>
-                    <p>We address the influence of magnetic fields with varying shapes and characters on the dynamics of open quantum systems. A configuration comprising magnetic pulses, thermal effects, gravity, and a non-locally correlated channel is studied. In a quantum magnetic system, we demonstrate how exponential and periodic magnetic pulses promote the formation of quantum and classical ridges against different ground and excited state energies. In particular, the detailed feasibility of the joint application of exponential and periodic magnetic pulses with correlated channels for the dynamics of quantum features and the associated experimental design for our studied theoretical model is elaborated. Finally, we find that the periodic magnetic functions are more powerful to induce non- Markovianity compared to the quantum channels, while the Markovian ones generate more stable and higher-entangled states. For the periodic magnetic fields, strong quantum entanglement ridges are witnessed against the very low ground and excited state amplitudes in the system.</p>
-                </section>
-            </li>
-            <li>
-                <section class="abstract-details">
-                    <h2>Soumyabrata Hazra</h2>
-                    <h3>Affiliation:</h3>
-                    <p>International Institute of Information Technology Hyderabad</p>
-                    <h3>Title of the Talk:</h3>
-                    <p>Computationally efficient method to characterize Noncontextual behaviour </p>
-                    <h3>Abstract:</h3>
-                    <p>Finding a set of empirical criteria fulfilled by any theory that satisfies the generalized notion of
-                        noncontextuality is a challenging task of both operational and foundational importance. The conventional approach of deriving facet inequalities from the relevant noncontextual polytope is computationally demanding. Specifically, the noncontextual polytope is a product of two polytopes, one for
-                            preparations and the other for measurements, and the dimension of the former typically increases
-                            polynomially with the number of measurements. This work presents an alternative methodology for
-                            constructing a polytope that encompasses the actual noncontextual polytope while ensuring that the
-                            dimension of the polytope associated with the preparations remains constant regardless of the number of measurements and their outcome size. In particular, the facet inequalities of this polytope serve
-                        as necessary conditions for noncontextuality. To demonstrate the efficacy of our methodology, we apply it to nine distinct contextuality scenarios involving four to nine preparations and two to three
-                    measurements to obtain the respective sets of facet inequalities. Additionally, we retrieve the maximum quantum violations of these inequalities. Our investigation uncovers many novel non-trivial
-                    noncontextuality inequalities and reveals intriguing aspects and applications of quantum contextual correlations.</p>
-                </section>
-            </li>
-            <li>
-                <section class="abstract-details">
-                    <h2>Akash Kundu</h2>
-                    <h3>Affiliation:</h3>
-                    <p>University of Helsinki.</p>
-                    <h3>Title of the Talk:</h3>
-                    <p>Quantum Architecture Search with Reinforcement Learning</p>
-                    <h3>Abstract:</h3>
-                    <p>In the noisy intermediate-scale quantum (NISQ) era, one of the key challenges is developing quantum circuits that work effectively within the limits of current hardware. Variational quantum algorithms (VQAs) have been created to address this, but their success depends on the circuit’s structure, initialization, and configuration. In my talk, I will discuss how reinforcement learning (RL) can be used to automate the search for optimal circuit structures—an approach known as quantum architecture search (QAS)—and improve VQAs performance. I will share results from numerical experiments showing that our RL-based QAS outperforms existing methods in both noiseless and noisy environments. Importantly, these techniques also hold promise for solving a wide range of other quantum optimization problems.</p>
-                </section>
-            </li>
-            <li>
-                <section class="abstract-details">
-                    <h2>Indranil Maiti</h2>
-                    <h3>Affiliation:</h3>
-                    <p>PhD student, Nicolaus Copernicus University, Torun, Poland</p>
-                    <h3>Title of the Talk:</h3>
-                    <p>Advantages and limitations of wavelength division multiplexing quantum key distribution</p>
-                    <h3>Abstract:</h3>
-                    <p> We theoretically investigate the proposed key rate-increasing technique for the realization of the entanglement-based version of the BB84 protocol with the use of a pulsed spontaneous parametric down-conversion (SPDC) source. We estimate the possible improvement of the key generation rate provided by such a system as a function of multiple setup parameters, including the duration of the pumping pulse, the width of the effective phase-matching function describing the nonlinear crystal and the power of the source. We study multiple setup configurations by changing the length of the fibers, the types of detectors used by the receiver and the WDM channel grid. We show that with proper optimization of the setup, the combined key rate can be significantly increased in comparison with the traditional QKD setup configuration and find the constraints for this improvement in the limit of infinitely many WDM channel pairs used for the QKD process.</p>
-                </section>
-            </li>
-            <li>
-                <section class="abstract-details">
-                    <h2>Collins Okon Edet </h2>
-                    <h3>Affiliation:</h3>
-                    <p>Institute of Engineering Mathematics, Universiti Malaysia Perlis</p>
-                    <h3>Title of the Talk:</h3>
-                    <p>Irreversibility in an Optical Parametric Driven Optomechanical System</p>
-                    <h3>Abstract:</h3>
-                    <p> This study investigates the role of nonlinearity via optical parametric oscillator on the entropy production rate and quantum correlations in a hybrid optomechanical system. Speciﬁcally, the modiﬁed entropy production rate of an optical parametric oscillator placed in the optomechanical cavity is derived,which is well described by the two-mode Gaussian state. The irreversibility and quantum mutual information associated with the driving the system far from equilibrium are found to be controlled by the phase and strength of nonlinearity. This analysis shows that the system entropy ﬂow, heating, or cooling, are determined by choosing the appropriate phase of the self-induced nonlinearity. It is further demonstrated that this eﬀect persists for a reasonable range of cavity decay rate.</p>
-                </section>
-            </li>
-            <li>
-                <section class="abstract-details">
-                    <h2>Akshay Patil</h2>
-                    <h3>Affiliation:</h3>
-                    <p>CDAC Pune</p>
-                    <h3>Title of the Talk:</h3>
-                    <p>Quantum Inspired Large Kronecker Product Decomposition for Universal Data Science, AI and ML Applications</p>
-                    <h3>Abstract:</h3>
-                    <p> Today’s world mostly innovates based on real world data and the compute power . But to use , transform and transmit large volumes of data we require proportionally large bandwidth communication channels , large computing power and large storage capacities of these processors . The question we ask and try to answer in this paper is “Is there a way to compute these large matrices on our day to day used classical processors ? “ , “ Can we train large data Neurel Networks on lower end classical processor “ ? Well , the answer to these questions is yes , and lies in Kronecker Product Decomposition of CNOT , the so called entangled gate matrix I.e. CNoT = A.B + C.D where . represents kronecker product . We will also touch upon the aspects of 1. Quantum Circuit Design 2. Classical Entanglement 3. Barren Plateau 4 . Image Compression 5 . Quantum Simulator etc .</p>
-                </section>
-            </li>
-            <li>
-                <section class="abstract-details">
-                    <h2>Satyaki Manna</h2>
-                    <h3>Affiliation:</h3>
-                    <p>IISER TVM</p>
-                    <h3>Title of the Talk:</h3>
-                    <p>Unbounded quantum advantage in communication complexity measured by distinguishability</p>
-                    <h3>Abstract:</h3>
-                    <p> Communication complexity is a fundamental aspect of information science, concerned with the amount of communication required to solve a problem distributed among multiple parties, where quantum theory presents a significant edge over classical communication. The standard quantification of one-way communication complexity relies on the minimal dimension of the communicated systems. In this work, we adopt a novel perspective, measuring the communication complexity of a task by the minimal distinguishability required to accomplish it while leaving the dimension of the communicated systems unconstrained. Distinguishability is defined as the maximum probability of correctly guessing the sender’s input from the message, quantifying the message’s distinctiveness relative to the sender’s input. This measure becomes especially relevant when maintaining the confidentiality of the sender’s input is essential. After establishing the generic framework, we focus on two families of communication complexity tasks—the random access codes and equality problems defined by graphs. We derive lower bounds on distinguishability as a function of the success metric of these tasks, which is valid for all classical communication protocols. We demonstrate that quantum communication outperforms classical communication by presenting explicit protocols and utilizing semi-definite programming methods. In particular, we demonstrate unbounded quantum advantage for random access codes and Hadamard graph-based equality problems. Specifically, we show that the classical-to-quantum ratio of minimal distinguishability required to achieve the same success metric escalates polynomially and exponentially with the complexity of these tasks, reaching arbitrarily large values.</p>
-                </section>
-            </li>
-            <li>
-                <section class="abstract-details">
-                    <h2>Ahmed Bessiri</h2>
-                    <h3>Affiliation:</h3>
-                    <p> Theoretical Physics Laboratory, Faculty of Physics, University of Bab-Ezzouar, USTHB, Boite Postale 32, El Alia, Algiers 16111, Algeria</p>
-                    <h3>Title of the Talk:</h3>
-                    <p>Super-Statistical Entropy: A New Tool for Quantifying Correlations in Quantum Systems</p>
-                    <h3>Abstract:</h3>
-                    <p> Quantum entanglement, one of the most enigmatic phenomena in quantum mechanics, holds promise for groundbreaking applications in quantum computing and communication. Consequently, theoretical scientists are urgently working to fully describe this phenomenon. In this study, we aim to enhance these efforts by developing an effective tool for quantifying entanglement between correlated systems. We introduce a quantum variant of a novel entropy form, inspired by the concept of super-statistics [1,2] as proposed in [3,4]. This new entropy measure is utilized to evaluate the entanglement of a quantum system composed of two qubits. Additionally, we investigate the impact of this measure on entanglement fluctuations. Our findings show that the results obtained have the same shape asymptotically as those obtained for von Neumann entropy but differ slightly quantitatively.</p>
-               
-                     <p> [1] Beck, C., & Cohen, E.G.D. Superstatistics. Physica A: Statistical Mechanics and its Applications, 322, 267-275, 2003</p>
-                     <p> [2] C. Beck, "Generalized statistical mechanics for super-statistical systems," Philos. Trans. R. Soc. A 369, 453, 2011</p>
-                     <p> [3] O. Obregón and A. Gil-Villegas, Physical Review E, vol. 88, no. 6, p. 062146, 2013</p>
-                     <p> [4] O. Obregón,  Entropy, vol. 12, no. 9, pp. 2067–2076, 2010</p>
-                </section>
-            </li>
-            <li>
-                <section class="abstract-details">
-                    <h2>Pallabi Chatterjee</h2>
-                    <h3>Affiliation:</h3>
-                    <p> IIT TIRUPATI</p>
-                    <h3>Title of the Talk:</h3>
-                    <p>Quest for optimal quantum resetting: protocols for a particle on a chain </p>
-                    <h3>Abstract:</h3>
-                    <p> In the classical context, it is well known that, sometimes, if the search does not find its target, it is better to start the process anew again, known as resetting. The quantum counterpart of resetting also indicates speeding up the detection process by eliminating the dark states, i.e., situations where the particle avoids detection. In this work, we introduce a most probable position resetting (MPR) protocol in which we reset the particle in a position where the probability of finding the particle could have been maximum, provided one would let the system evolve Unitarily in a given time window. In a tight-binding lattice model, there exists a 2-fold degeneracy (left and right) of the positions of maximum probability. The survival probability with optimal restart rate approaches zero (detection probability approaches one) when the particle is reset with equal probability on both sides. This protocol significantly reduces the optimal mean first-detected-passage time (FDT) and performs better even if the detector is far apart compared to the usual resetting protocols where the particle is brought back to the initial position. We propose a modified protocol, adaptive two-stage MPR, by making the associated probabilities of resetting to the right and left a function of resetting steps. In this protocol, we see a further reduction of the optimal mean FDT and improvement in the search process when the detector is far apart.</p>
-                </section>
-            </li>
-            <li>
-                <section class="abstract-details">
-                    <h2>TALBI KHALID</h2>
-                    <h3>Affiliation:</h3>
-                    <p>Faculty of Applied Sciences Ait Melloul</p>
-                    <h3>Title of the Talk:</h3>
-                    <p>Entanglement witnessing based on extracted work for three-level lasers </p>
-                    <h3>Abstract:</h3>
-                    <p> Nowadays, it is widely accepted that the aspect of information is a thermodynamic source fuel of energy that can be employed to extract useful work via measurements and feedback control. Besides, it has been shown that the work extractable from correlated bipartite quantum states can be used to distinguish entanglement from separability. Here, based on the amount of work that can be extracted out of a thermal bath by a Szilard-like engine, where a two-mode Gaussian state ρAB serves as the working medium of the engine, we define an operational criterion EW for witnessing the presence of entanglement in the state ρAB. The modes A and B are generated during the first and second transitions of a nondegenerate three-level laser, and coupled to a common two-mode thermal bath. As results, we show that the proposed criterion EW remains zero when ρAB is a product state. In addition, EW is maximal when the state ρAB is coupled to the vacuum bath, and diminishes under thermal noise effect. Also, we find the the degree of entanglement detected by the criterion EW could be controlled by the atomic coherence of the laser. Finally, comparison of EW with a faithful measure of entanglement (i.e., the logarithmic negativity) indicates perfect consistency in the detection of entanglement in ρAB.</p>
-                </section>
-            </li>
-            <li>
-                <section class="abstract-details">
-                    <h2>Pranav Kairon </h2>
-                    <h3>Affiliation:</h3>
-                    <p>University of Illinois Urbana Champaign </p>
-                    <h3>Title of the Talk:</h3>
-                    <p>Extrapolation of polaron properties to low phonon frequencies by Bayesian machine learning </p>
-                    <h3>Abstract:</h3>
-                    <p> Feasibility of accurate quantum calculations is often restricted by the dimensionality of the truncated Hilbert space required for the numerical computations. The present work demonstrates Bayesian machine learning (ML) models that use quantum properties in an effectively lower-dimensional Hilbert space to make predictions for the Hamiltonian parameters that require a larger basis set as applied to a classical problem in quantum statistical mechanics, the polaron problem. We consider two polaron models: the Su-Schrieffer-Heeger (SSH) model and the mixed SSH-Holstein model. We demonstrate ML models that can extrapolate polaron properties in the phonon frequency. We consider the sharp transition in the ground-state momentum of the SSH polaron and examine the evolution of this transition from the anti-adiabatic regime to the adiabatic regime. We also demonstrate Bayesian models that use the posterior distributions of highly approximate quantum calculations as the prior distribution for models of more accurate quantum results. This drastically reduces the number of fully converged quantum calculations required to map out the polaron dispersion relations for the full range of Hamiltonian parameters of interest.</p>
-                </section>
-            </li>
-             <li>
-                <section class="abstract-details">
-                    <h2>Satyam Prakash</h2>
-                    <h3>Affiliation:</h3>
-                    <p>University of Hyderabad </p>
-                    <h3>Title of the Talk:</h3>
-                    <p>Ionisation of Rydberg atoms in plasma medium. </p>
-                    <h3>Abstract:</h3>
-                    <p>Interaction between electrons and unionized neutral atoms inside Ultracold plasma medium can show quantum mechanical behaviour even when the plasma is dilute. So far the electron and ion dynamics in plasma medium has been separately treated using classical Vlasov equations. We instead use quantum mechanical scattering theory to  calculate electron-atom interaction cross-sections. We show that the results are relevant to calculations of percentage ionization and thus can be useful to control the ionization efficiency of Ultracold plasma to achieve denser Ultracold plasmas via the route of Rydberg to Ultracold plasma transition. Furthermore, we develop the parametric values where the quantum effects become important. Using the quantum mechanical scattering theory we explain the anomalous behavior shown by rydberg excited to n=30 or lesser, that is, why the percentage ionization for these rydberg atoms is negligible. In this work, we have considered screening effects on electron-atom interaction which is significant in a dense or low-temperature Ultracold Plasma.</p>
-                </section>
-            </li>
-            <li>
-                <section class="abstract-details">
-                    <h2>Abhishek Tiwari </h2>
-                    <h3>Affiliation:</h3>
-                    <p>CDAC Noida  </p>
-                    <h3>Title of the Talk:</h3>
-                    <p>QUANTUM ACCELERATORS FOR ENABLING QUANTUM COMPUTING ON SUPERCOMPUTERS </p>
-                    <h3>Abstract:</h3>
-                    <p>The research work envisages in building Quantum Accelerators wherein a small-scale Accelerator card is integrated with HPC nodes to achieve computational tasks that are otherwise beyond the reach of the Quantum Simulators available for a given class of problems. The Quantum Accelerator integrated with the PARAM supercomputers can enable the development of Quantum Algorithms by providing a Quantum development and execution environment. The objective aims in setting up Quantum Accelerators testbed capable of performing Quantum computations and execution of quantum algorithms that need active research and new developments. </p>
-                </section>
-            </li>
-            <li>
-                <section class="abstract-details">
-                    <h2>Javid Naikoo </h2>
-                    <h3>Affiliation:</h3>
-                    <p>Adam Mickiewicz University, Poznań, Poland</p>
-                    <h3>Title of the Talk:</h3>
-                    <p>Enhanced quantum sensing by capitalising on dynamical singularities. </p>
-                    <h3>Abstract:</h3>
-                    <p>I will talk about the role of non-Hermitian Hamiltonians in achieving high sensitivity in parameter estimation [1] and their inherent vulnerability to quantum noise [2,3]. I will discuss briefly some alternative quantum sensing schemes, including exceptional point (EP) amplified sensing [4] and non-reciprocity-based sensing [5]. The primary focus will be on how dynamical singularities can be used for enhancing sensitivity [6]. By employing Gaussian quantum systems and singular-matrix perturbation theory, I will illustrate the manner and rate at which sensitivity diverges, and how nuisance parameters impact this divergence. </p>
+        <!-- Solutions Section -->
+        <section id="solutions">
+            <h2>Our Solutions</h2>
+            <div class="grid">
+                <div>
+                    <h3>Cost-Effective Quantum Solutions</h3>
+                    <p>Quantum-inspired solutions reduce the need for extensive computational resources, lowering costs.</p>
+                </div>
+                <div>
+                    <h3>Scalable Quantum Algorithms</h3>
+                    <p>The algorithms are designed to scale efficiently without needing massive datasets.</p>
+                </div>
+                <div>
+                    <h3>Hardware-Compatible Quantum Models</h3>
+                    <p>Quantum-inspired models are optimized to run on classical hardware, addressing limitations of quantum-specific hardware.</p>
+                </div>
+                <div>
+                    <h3>High-Accuracy Quantum Performance</h3>
+                    <p>Quantum models promise superior accuracy in applications like image-to-image and text-to-video generation.</p>
+                </div>
+            </div>
+        </section>
 
-                    <p>[1] J. Wiersig, Phys. Rev. Lett. 112, 203901 (2014). </p>
-                    <p>[2] W. Langbein, Phys. Rev. A 98, 023805 (2018). </p>
-                    <p>[3]  C. Chen, L. Jin, and R.-B. Liu, New J. Phys. 21, 083002 (2019). </p>
-                    <p>[4] M. Zhang, W. Sweeney, C. W. Hsu, L. Yang, A. D. Stone, and L. Jiang, Phys. Rev. Lett. 123,       180501 (2019). </p>
-                    <p>[5] H.-K. Lau and A. A. Clerk, Nat. Commun. 9, 1 (2018). </p>
-                    <p>[6] J. Naikoo, Ravindra W. Chhajlany, and Jan Kolodynski, Phys. Rev. Lett. 131, 220801 (2019). </p>
+        <!-- Applications Section -->
+        <section id="applications">
+            <h2>Applications</h2>
+            <div class="grid">
+                <div>
+                    <h3>Healthcare Innovation</h3>
+                    <p>Early disease prediction and age-reversal research.</p>
+                </div>
+                <div>
+                    <h3>Superconductivity</h3>
+                    <p>Pursuing room-temperature superconductors for energy and tech advancements.</p>
+                </div>
+                <div>
+                    <h3>Enhanced Generative AI</h3>
+                    <p>Advanced text-to-image, video generation, and more.</p>
+                </div>
+                <div>
+                    <h3>Space Exploration</h3>
+                    <p>Quantum gravity simulations for better space research.</p>
+                </div>
+            </div>
+        </section>
 
-                </section>
-            </li>
-            <li>
-                <section class="abstract-details">
-                    <h2>Raja Babu Jamatia </h2>
-                    <h3>Affiliation:</h3>
-                    <p>Shoolini University of Biotechnology and Management Sciences  </p>
-                    <h3>Title of the Talk:</h3>
-                    <p>Enhancing a Biometrics Security System : Integrating Traditional Soft Computing and Quantum Techniques  </p>
-                    <h3>Abstract:</h3>
-                    <p>In the evolving landscape of digital security, biometric systems play a crucial role in protecting sensitive information. However, these systems often struggle with vulnerabilities and computational inefficiencies. This paper proposes a novel enhancement to biometric security by integrating traditional soft computing methods with quantum computing techniques. Soft computing, recognized for its ability to handle uncertainty and imprecision, forms a robust foundation for processing biometric data. However, its susceptibility to advanced threats and limitations in computational power necessitates further innovation. By incorporating quantum computing, I introduce a hybrid approach that leverages quantum principles like superposition and entanglement to fortify the security and efficiency of biometric systems. This integration not only improves the accuracy and speed of data processing but also strengthens encryption and authentication protocols. Through comprehensive simulations and analyses, my hybrid model demonstrates significant improvements in security and performance over conventional biometric systems. This work highlights the potential for quantum-enhanced biometrics to meet the growing demands of secure digital environments. </p>
-                </section>
-            </li>
-            <li>
-                <section class="abstract-details">
-                    <h2>Ruiyang Zhou </h2>
-                    <h3>Affiliation:</h3>
-                    <p>University of Electronic Science and Technology of China </p>
-                    <h3>Title of the Talk:</h3>
-                    <p>Non-Equilibrium Dynamics of Many-Body Systems for Image Processing in Quantum Machine Learning  </p>
-                    <h3>Abstract:</h3>
-                    <p>The burgeoning field of Quantum Machine Learning (QML) offers transformative potential for solving complex problems in image processing by leveraging the principles of quantum mechanics. This work explores the application of non-equilibrium dynamics of many-body systems within the QML framework to address challenges in image processing. By treating images as many-body systems and applying concepts from non-equilibrium statistical mechanics, we develop novel algorithms that enhance image quality, improve segmentation accuracy, and enable sophisticated pattern recognition. </p>
-                </section>
-            </li>
-            <li>
-                <section class="abstract-details">
-                    <h2>Srikara S</h2>
-                    <h3>Affiliation:</h3>
-                    <p>PhD Student at University of Technology, Sydney </p>
-                    <h3>Title of the Talk:</h3>
-                    <p>Resource Analysis for Applications Involving Large-Scale Quantum Entanglement Distribution </p>
-                    <h3>Abstract:</h3>
-                    <p> Quantum entanglement distribution is an important primitive for several tasks in quantum communication and distributed quantum computing. This phenomenon, which enables the creation of correlated quantum states between distant parties, forms the basis for various quantum protocols, including quantum key distribution, teleportation, and networked quantum computing. The ability to efficiently generate, distribute, and manipulate entangled states across large distances is crucial for realizing the full potential of quantum technologies on a global scale. However, the inherent fragility of quantum states and the no-cloning theorem pose significant challenges to long-distance entanglement distribution, necessitating innovative approaches to overcome these limitations. This talk explores the feasibility and potential of satellite and sneakernet-based quantum networks for distributed quantum computing and secure communication. Building upon recent advancements in quantum technology, including the Quantum Experiments at Space Scale (QUESS) project, we investigate both downlink and uplink approaches for entanglement distribution using satellites. We begin by analyzing the limitations of satellite-based fault-tolerant distributed quantum computing (FTDQC) in the downlink scenario. We derive mathematical expressions to quantify the rate of logical Bell-pair generation between distant fault- tolerant logical qubits, considering factors such as free-space losses, atmospheric attenuation, and error correction requirements. Our findings indicate potential long- term scaling challenges for satellite-based FTDQC due to power constraints, with estimated maximum clock speeds ranging from 1 MHz for short distances to 100 Hz for intercontinental distances. To address these limitations, we propose and evaluate an uplink approach where Bell pairs are generated on the ground and sent to satellites for entanglement swapping. Despite challenges such as increased atmospheric scattering and precise timing requirements, we demonstrate the feasibility of performing optical Bell measurements on satellites with reasonable fidelity and efficiency. This approach leverages the significantly higher power available for pair production on the ground compared to space-based systems. Finally, we present a novel protocol for secure quantum key distribution using delayed-choice entanglement swapping. This method enables users with only classical hardware to generate secure quantum keys by interacting with a central quantum memory provider. The protocol's versatility allows pre-purchasing of key bits and supports various applications beyond secure communication, such as quantum voting and clock synchronization. Our research contributes to the ongoing development of scalable quantum networks and provides insights into overcoming current limitations in satellite-based quantum communication and computing. The findings pave the way for future advancements in global quantum internet infrastructure and distributed quantum computing systems.</p>
-                </section>
-            </li>
-            <li>
-                <section class="abstract-details">
-                    <h2>Rashi Jain </h2>
-                    <h3>Affiliation:</h3>
-                    <p>Delhi Technological University </p>
-                    <h3>Title of the Talk:</h3>
-                    <p>Modified Six State Cryptographic Protocol with Entangled Ancilla States  </p>
-                    <h3>Abstract:</h3>
-                    <p>In a realistic situation, it is very difficult to communicate securely between two distant parties without introducing any disturbances. These disturbances might occur either due to external noise or may be due to the interference of an eavesdropper. In this work, we consider and modify the six-state Quantum Key Distribution (QKD) protocol in which Eve can construct the unitary transformation that makes all ancilla states entangled at the output, which is not considered in Bruss's work [D. Bruß, Phys. Rev. Lett. 81, 3018 (1998)]. Using the above-proposed modification, we would like to study the effect of entangled ancilla states on the mutual information between Alice and Eve. To achieve this task, we calculate the mutual information between Alice and Bob and Alice and Eve and identify the region where the secret key is generated even in the presence of Eve. We find that, in general, the mutual information of Alice and Eve depends not only on the disturbance D but also on the concurrence of the ancilla states. We show that the entanglement of the ancilla states helps generate the secret key in the region where Bruss's six-state QKD protocol failed to do so. We have further shown that it is possible to derive the disturbance-free mutual information of Alice and Eve, if Eve manipulates her entangled ancilla state in a particular manner. Thus, in this way, we can show that a secret key can be generated between Alice and Bob even if the disturbance is large enough. </p>
-                </section>
-            </li>
-            <li>
-                <section class="abstract-details">
-                    <h2>Harsha Miriam Reji </h2>
-                    <h3>Affiliation:</h3>
-                    <p>Indian Institute of Technology Dharwad </p>
-                    <h3>Title of the Talk:</h3>
-                    <p>Conditions for separability in multiqubit systems with an accelerating qubit using a conditional entropy  </p>
-                    <h3>Abstract:</h3>
-                    <p> We study the separability in multiqubit pure and mixed Greenberger-Horne-Zeilinger (GHZ), and W states with an accelerating qubit using the Abe-Rajagopal (AR) q-conditional entropy. We observe that the pure multiqubit GHZ and W states in the inertial-noninertial bipartition with one of their qubits accelerated will remain nonseparable irrespective of the qubit’s acceleration. In these systems, we capture the variation of their nonseparability with respect to the acceleration of the qubit and the AR q-conditional entropy parameter q. However, in the corresponding multiqubit mixed states obtained by introducing a global noise to the above pure states, we could get stronger conditions on their separability in the inertial-noninertial bipartition, in terms of the acceleration of the qubit, the noise parameter, and the number of qubits in the system, in the asymptotic limit of the parameter q. These conditions obtained from the AR q-conditional entropy form stricter conditions for separability than those obtained from logarithmic negativity in such multiqubit states with a relativistic qubit.</p>
-                </section>
-            </li>
-            <li>
-                <section class="abstract-details">
-                    <h2>Ayush Kaushik</h2>
-                    <h3>Affiliation:</h3>
-                    <p>Chaudhary Charan Singh University </p>
-                    <h3>Title of the Talk:</h3>
-                    <p>Quantum structure of primordial matter: The mysteries of the quantum foundations of the standard model of particle physics and beyond.  </p>
-                    <h3>Abstract:</h3>
-                    <p>The Standard Model of particle physics has been highly successful in describing the interactions of fundamental particles via the electromagnetic, weak, and strong nuclear forces. However, it falls short in several areas, such as incorporating gravity, explaining dark matter and dark energy, and accounting for the observed matter-antimatter asymmetry. This talk delves into the quantum foundations of the Standard Model, highlighting its limitations and exploring theoretical paths beyond the current framework. At its heart, the Standard Model is a quantum field theory defined by specific gauge symmetries and the Higgs mechanism for spontaneous symmetry breaking. Despite its predictive power, it faces significant conceptual challenges, including the hierarchy problem and vacuum stability concerns. The quantum structure of primordial matter raises further questions, particularly in the context of early universe cosmology, inflation, and the nature of space-time, which may require a unified theory of quantum gravity.
-The talk will also address the unresolved issues of dark matter and dark energy, which lie outside the Standard Model’s scope. Proposals such as supersymmetry, extra dimensions, and various beyond-Standard Model theories offer possible solutions but lack experimental confirmation. Foundational issues in quantum mechanics, including interpretations of wavefunction collapse and the nature of quantum states, also suggest the need for deeper theoretical frameworks. By exploring the intersection of quantum mechanics, particle physics, and cosmology, this talk aims to shed light on potential paths toward a more comprehensive theory that bridges the Standard Model and a deeper understanding of the universe's fundamental nature. </p>
-                </section>
-            </li>
-            <li>
-                <section class="abstract-details">
-                    <h2>Dr. Shruti Aggarwal </h2>
-                    <h3>Affiliation:</h3>
-                    <p>Delhi Technological University </p>
-                    <h3>Title of the Talk:</h3>
-                    <p>Physical realization of realignment criteria via Structural Physical Approximation  </p>
-                    <h3>Abstract:</h3>
-                    <p>The realignment criterion is a powerful tool for the detection of entangled states in bipartite and multipartite quantum systems. It works well not only for negative-partial-transpose entangled states (NPTESs) but also for positive-partial-transpose entangled states
-(PPTESs). Since the matrix corresponding to the realignment map is indefinite, the experimental implementation of the map is an obscure task. In this work, first, we approximate the realignment map to a positive map using the method of structural physical approximation, and then we show that the structural physical approximation of the realignment map (SPA-R) is completely positive. Positivity of the constructed map is characterized using moments which can be physically measured. Next, we develop a separability criterion based on our SPA-R map in the form of an inequality and show that the developed criterion not only detect NPTESs but also PPTESs. Further, we show that for a special class of states called Schmidt-symmetric states, the SPA-R separability criteria reduce to the original form of the realignment criteria. We provide some examples to support the results obtained. </p>
-                </section>
-            </li>
-            <li>
-                <section class="abstract-details">
-                    <h2>Sagnik Ray </h2>
-                    <h3>Affiliation:</h3>
-                    <p>IISER Thiruvananthapuram </p>
-                    <h3>Title of the Talk:</h3>
-                    <p>No epistemic model can explain anti-distinguishability of quantum mixed preparations </p>
-                    <h3>Abstract:</h3>
-                    <p> We address the fundamental question of whether epistemic models can reproduce the empirical predictions of general quantum preparations. This involves comparing the common quantum overlap determined by the anti-distinguishability of a set of mixed preparations with the common epistemic overlap of the probability distribution over the ontic states describing these preparations. A set of quantum mixed preparations is deemed to be non-epistemic when the epistemic overlap must be zero while the corresponding quantum overlap remains non-zero. In its strongest manifestation, a set of mixed quantum preparations is fully non-epistemic if the epistemic overlap vanishes while the quantum overlap reaches its maximum value of one. Remarkably, we show that there exist sets of non-epistemic mixed preparations even in dimension 2, when the overlap between three mixed preparations is concerned. Moreover, we present quantum mixed preparations in dimensions 3 and 4 that are fully non-epistemic concerning the overlap between four and three preparations, respectively. We also establish a generic upper bound on the average ratio between the epistemic and quantum overlap for two mixed preparations. Consequently, the ratio for certain pairs of quantum mixed preparations is shown to be arbitrarily small in two different instances, signifying they are non-epistemic in one case and fully non-epistemic in the other. Finally, we delve into some of the remarkable implications stemming from our findings.</p>
-                </section>
-            </li>
-            <li>
-                <section class="abstract-details">
-                    <h2>Varinder Singh</h2>
-                    <h3>Affiliation:</h3>
-                    <p>Korea Institute for Advanced Study (KIAS) </p>
-                    <h3>Title of the Talk:</h3>
-                    <p>Thermodynamic uncertainty relation in degenerate and nondegenerate maser heat engines  </p>
-                    <h3>Abstract:</h3>
-                    <p> We investigate the thermodynamic uncertainty relation (TUR), i.e., a tradeoff between entropy production rate and relative power fluctuations, for nondegenerate three-level and degenerate four-level maser heat engines. In the nondegenerate case, we consider two slightly different configurations of the three-level maser heat engine and contrast their degree of violation of the standard TUR. We associate their different TUR-violating properties to the phenomenon of spontaneous emission, which gives rise to an asymmetry between them. Furthermore, in the high-temperature limit, we show that the standard TUR relation is always violated for both configurations. For the degenerate four-level engine, we study the effects of noise-induced coherence on the TUR. We show that, depending on the parametric regime of operation, noise-induced coherence can either suppress or amplify the relative power fluctuations.</p>
-                </section>
-            </li>
-            <li>
-                <section class="abstract-details">
-                    <h2>Vipin </h2>
-                    <h3>Affiliation:</h3>
-                    <p>IIT(BHU) Varanasi </p>
-                    <h3>Title of the Talk:</h3>
-                    <p>Plasmonic skyrmion quantum thermodynamics  </p>
-                    <h3>Abstract:</h3>
-                    <p>The primary obstacle in the field of quantum thermodynamics revolves around the development and practical implementation of quantum heat engines operating at the nanoscale. One of the key challenges associated with quantum working bodies is the occurrence of “quantum friction”, which refers to irreversible wasted work resulting from quantum inter-level transitions. Consequently, the construction of a reversible quantum cycle necessitates the utilization of adiabatic shortcuts. However, the experimental realization of such shortcuts for realistic quantum substances is exceedingly complex and often unattainable for realistic materials. In this study, we propose a quantum heat engine that capitalizes on the plasmonic skyrmion lattice. Through rigorous analysis, we demonstrate that the quantum skyrmion substance, owing to its topological protection, exhibits zero irreversible work. Consequently, our engine operates without the need for adiabatic shortcuts. We checked by numerical calculations and observed that when the system is in the quantum skyrmion phase, the propagated states differ from the initial states only by the geometrical and dynamical phases. The adiabatic evolution leads to zero transition matrix elements and zero irreversible work. By employing plasmonic mods and an electric field, we drive the quantum cycle. The fundamental building blocks for constructing the quantum working body are individual skyrmions within the plasmonic lattice. As a result, one can precisely control the output power of the engine and the thermodynamic work accomplished by manipulating the number of quantum skyrmions present. </p>
-                </section>
-            </li>
-            <li>
-                <section class="abstract-details">
-                    <h2>Qingyu Li </h2>
-                    <h3>Affiliation:</h3>
-                    <p>University of Electronic Science and Technology of China </p>
-                    <h3>Title of the Talk:</h3>
-                    <p>Ensemble-learning error mitigation for variational quantum shallow-circuit classifiers  </p>
-                    <h3>Abstract:</h3>
-                    <p> Classification is one of the main applications of supervised learning. Recent advancements in developing quantum computers have opened a new possibility for machine learning on such machines. Due to the noisy performance of near-term quantum computers, error mitigation techniques are essential for extracting meaningful data from noisy raw experimental measurements. Here, we propose two ensemble-learning error mitigation methods, namely, bootstrap aggregating and adaptive boosting, which can significantly enhance the performance of variational quantum classifiers for both classical and quantum datasets. The idea is to combine several weak classifiers, each implemented on a shallow noisy quantum circuit, to make a strong one with high accuracy. While both of our protocols substantially outperform error-mitigated primitive classifiers, the adaptive boosting shows better performance than the bootstrap aggregating. The protocols have been exemplified for classical handwriting digits as well as quantum phase discrimination of a symmetry-protected topological Hamiltonian, in which we observe a significant improvement in accuracy. Our ensemble-learning methods provide a systematic way of utilizing shallow circuits to solve complex classification problems.</p>
-                </section>
-            </li>
-            <li>
-                <section class="abstract-details">
-                    <h2>M Suman</h2>
-                    <h3>Affiliation:</h3>
-                    <p>Indian Institute of Technology Tirupati </p>
-                    <h3>Title of the Talk:</h3>
-                    <p>Probing quantum phase transition via quantum speed limit  </p>
-                    <h3>Abstract:</h3>
-                    <p>The quantum speed limit (QSL) is the lower bound on the time required for a state to evolve to a desired final state under a given Hamiltonian evolution. Three well-known QSLs exist: the Mandelstam-Tamm (MT), Margolus-Levitin (ML), and dual ML (ML*) bounds. First, we consider one-dimensional systems that undergoes delocalization-localization phase transition in the presence of quasiperiodic potential. By performing sudden quenches across the phase boundary, we find that the exact dynamics get captured very well by QSLs. Finally, we also demonstrate that the localization-delocalization transition point can be approximately identified from QSLs, whose computation cost is much less compared to many other diagnostic tools. </p>
-                </section>
-            </li>
-            <li>
-                <section class="abstract-details">
-                    <h2>Shivam Sinha </h2>
-                    <h3>Affiliation:</h3>
-                    <p>Indian Institute of Technology Tirupati </p>
-                    <h3>Title of the Talk:</h3>
-                    <p>Generalized α-Observational Entropy and thermodynamic entropy production </p>
-                    <h3>Abstract:</h3>
-                    <p>Traditional measures of entropy, like the Von Neumann entropy, while fundamental in quantum information theory, are insufficient when interpreted as thermodynamic entropy due to their invariance under unitary transformations, which contradicts observed entropy increases in isolated systems. Recognizing the limitations of existing measures for thermodynamic entropy, recent research has focused on observational entropy (OE) as a promising alternative, offering practical applicability and theoretical insights. In our work, we extended the scope of observational entropy by generalizing it to a parameterized version called α-Observational entropy (α-OE). α-OE is expressed in terms of the Petz-R\'{e}nyi relative entropy between the states on which a quantum-to-classical channel is applied. The α-OE reduces to OE under α tends to 1. We prove various properties of the α-OE, which are the generalization of the properties of OE, including the monotonically increasing of α-OE as a function of refinement of coarse-graining. The generalized quantum relative entropies play a central role in many areas of quantum information theory. We further explore the role of α-OE in thermodynamic contexts, particularly its implications for entropy production in open and closed quantum systems and its relation with the Helmholtz free energy. Our results provide a broader framework linking generalized quantum relative entropies to thermodynamic entropy. </p>
-                </section>
-            </li>
-            <li>
-                <section class="abstract-details">
-                    <h2>Akhil Deswal </h2>
-                    <h3>Affiliation:</h3>
-                    <p>Not Available </p>
-                    <h3>Title of the Talk:</h3>
-                    <p>Time resolved superradiant enhancement of Unruh signal </p>
-                    <h3>Abstract:</h3>
-                    <p>We aim to employ Superradiance to temporally resolve Unruh signal from inertial one. Coherent photon emission from an ensemble of atoms is influenced by their spatial arrangement and proper transition frequency. In our approach, we use a parallel plate setup, tuned slightly below the resonance point, to utilize the time-dependent Doppler shift for accelerated atoms arranged in an ordered array. This configuration allows us to resolve in time, the inertial and non-inertial contributions to the radiative decay of atoms, particularly at lower accelerations. </p>
-                </section>
-            </li>
-            <li>
-                <section class="abstract-details">
-                    <h2>Gaurav Rudra Malik </h2>
-                    <h3>Affiliation:</h3>
-                    <p>Department of Physics, IIT(BHU), Varanasi </p>
-                    <h3>Title of the Talk:</h3>
-                    <p>Multipartite Entangling Power in Quantum Circuits  </p>
-                    <h3>Abstract:</h3>
-                    <p> Quantum entanglement serves as an essential resource for quantum information processing. In our present work we explore the dynamics of entanglement generated by many-body systems. From an operator perspective entanglement generation is characterised by the notion of entangling power, and we put forward results exploring the effect of local gates over the dynamics of the entire system. Moreover, we go ahead to discuss the multipartite features of this entanglement generation, and also the ability of a given quantum circuit to generate such features. For our work, we study the dynamics generated by the dual-unitary quantum circuits, a recently introduced class of circuits that serve as minimal models of quantum chaos within many-body systems. Using a family of dual-unitary with a tunable parameter for controlling the entangling power allows us to undertake a systematic study of our problem. Our results also help identify signatures of the ergodic hierarchy with many-body systems, dependent on their integrable or chaotic nature.</p>
-                </section>
-            </li>
-            <li>
-                <section class="abstract-details">
-                    <h2>Anuvab Nandi</h2>
-                    <h3>Affiliation:</h3>
-                    <p>Indian Institute of Science Education and Research, Kolkata </p>
-                    <h3>Title of the Talk:</h3>
-                    <p>Coherent Manipulation of Electron spins of an Ensemble of Nitrogen vacancy defect centers in diamond </p>
-                    <h3>Abstract:</h3>
-                    <p> We present an experimental setup for the initialization, manipulation and detection of electron spins of nitrogen vacancy centers in diamond. The longitudinal and transverse coherence times of the defect center have been characterized. The effect of the magnetic field inhomogeneity has been eliminated with the help of the spin echo sequence. The pulse errors and environmental noise have been decoupled using a CPMG sequence to obtain coherence times close to hundreds of microseconds.</p>
-                </section>
-            </li>
-            <li>
-                <section class="abstract-details">
-                    <h2>Alejandro Pozas-Kerstjens </h2>
-                    <h3>Affiliation:</h3>
-                    <p>Université de Genève </p>
-                    <h3>Title of the Talk:</h3>
-                    <p>Joint measurements on distant physical systems  </p>
-                    <h3>Abstract:</h3>
-                    <p>It is not explicitly obvious that relativity and quantum mechanics are consistent with each other. Extensive research has shown that quantum states are consistent with relativity, in that they do not allow for faster-than-light transferring of information. In contrast, much less research has been done in quantum measurements, and in fact, naive attempts to put together relativity and quantum measurements lead to signaling between space-like separated regions. In this talk I will describe how this same problem arises in non-relativistic quantum physics, where measurements on systems kept spatially separated in general lead to signalling. By giving away the projection postulate, it is possible to alleviate this problem and measure non-local variables without signaling by exploiting pre-shared entanglement as a resource. I will describe a protocol for implementing any joint measurement in a non-signaling manner, and argue that this leads to a complete classification of all joint quantum measurements, based on the required amount of entanglement necessary to measure them. </p>
-                </section>
-            </li>
-            <li>
-                <section class="abstract-details">
-                    <h2>Devibala E</h2>
-                    <h3>Affiliation:</h3>
-                    <p>School of Physics, Madurai Kamaraj University, Madurai, Tamil Nadu </p>
-                    <h3>Title of the Talk:</h3>
-                    <p>Heralded generation of displaced qudits from quantum optical catalysis</p>
-                    <h3>Abstract:</h3>
-                    <p> Conditional measurements in the continuous variable regime offer various platform for the creation of exotic quantum states. Quantum optical catalysis (QOC) is a sub-class of conditional measurement where the given input and the detected output photon number states are the same. Here, we studied the output of the QOC process in the context of the generation of displaced qudits (DQ). The obtained superposition coefficients of DQ facilitate the characterization of states and carve a path to get desired non-Gaussian states. The nonclassical properties of DQ are studied by employing Hilbert Schmidt distance, Wigner negativity, and quadrature squeezing. From the premise, it is observed that the non-Gaussianity of generated individual displaced number states is more pronounced among the states derived. Meanwhile, a significant degree of squeezing is achieved in the generation of superposition of number states. Moreover, the non-ideal preparation of DQ under realistic experimental conditions is investigated. The calculated success probability also demonstrates the possibility of DQ generation in realistic conditions.</p>
-                </section>
-            </li>
-            <li>
-                <section class="abstract-details">
-                    <h2>Dekel Meirom </h2>
-                    <h3>Affiliation:</h3>
-                    <p>Technion </p>
-                    <h3>Title of the Talk:</h3>
-                    <p>Discretized Quantum Exhaustive Search for Variational Quantum Algorithms </p>
-                    <h3>Abstract:</h3>
-                    <p>In this talk I will present a novel method that can improve variational quantum algorithms, called “discretized quantum exhaustive search”. On classical computers, exhaustive search, also named brute force, solves small-size NP complete and NP hard problems. Exhaustive search and efficient partial exhaustive search help designing heuristics and exact algorithms for solving larger-size problems by finding easy subcases or good approximations. We adopt this method to the quantum domain, by relying on mutually unbiased bases for the 2^n-dimensional Hilbert space. We define a discretized quantum exhaustive search that works well for small size problems. We provide an example of an efficient partial discretized quantum exhaustive search for larger-size problems, in order to extend classical tools to the quantum computing domain, for near future and far future goals. Our method enables obtaining intuition on NP-complete and NP-hard problems as well as on Quantum Merlin Arthur (QMA)-complete and QMA-hard problems. </p>
-                </section>
-            </li>
-            <li>
-                <section class="abstract-details">
-                    <h2>Nirupam Basak </h2>
-                    <h3>Affiliation:</h3>
-                    <p>Indian Statistical Institute, Kolkata</p>
-                    <h3>Title of the Talk:</h3>
-                    <p>Evaluating Quantumness, Efficiency and Cost of Quantum Random Number Generators via Photon Statistics  </p>
-                    <h3>Abstract:</h3>
-                    <p> Despite the availability of commercial QRNG devices, computationally distinguishing between PRNG and QRNG outputs remains challenging. This paper presents two significant contributions from the perspectives of QRNG manufacturers and users. For manufacturers, the conventional method of assessing the quantumness of single-photon-based QRNGs through mean and variance comparisons of photon counts is statistically unreliable due to finite sample sizes. Given the sub-Poissonian statistics of single photons, confirming the underlying distribution is crucial for validating a QRNG's quantumness. We propose a more efficient two-fold statistical approach to ensure the quantumness of optical sources with the desired confidence level. Additionally, we demonstrate that the output of QRNGs from exponential and uniform distributions exhibit similarity under device noise, deriving corresponding photon statistics and conditions for $\epsilon$-randomness. From the user's perspective, the fundamental parameters of a QRNG are quantumness (security), efficiency (randomness and random number generation rate), and cost. Our analysis reveals that these parameters depend on three factors, expected photon count per unit time, external reference cycle duration, and detection efficiency. A lower expected photon count enhances security but increases cost and decreases the generation rate. A shorter external reference cycle boosts security but must exceed a minimum threshold to minimize timing errors, with minor impacts on cost and rate. Lower detection efficiency enhances security and lowers cost but reduces the generation rate. Finally,  to validate our results, we perform statistical tests like NIST, Dieharder, AIS-31, ENT etc. over the data simulated with different values of the above parameters. Our findings can empower manufacturers to customize QRNGs to meet user needs effectively.</p>
-                </section>
-            </li>
-            <li>
-                <section class="abstract-details">
-                    <h2>Ram Krishna Patra</h2>
-                    <h3>Affiliation:</h3>
-                    <p>S.N. Bose National Centre for Basic Sciences (SNBNCBS) </p>
-                    <h3>Title of the Talk:</h3>
-                    <p>Nonlocal Locking of Observable Quantities: A Faithful Signature of Nonclassical Correlations </p>
-                    <h3>Abstract:</h3>
-                    <p> Nonclassicality in composite quantum systems depicts several puzzling manifestations, with Einstein-Podolsky-Rosen entanglement, Schrodinger steering, and Bell nonlocality being the most celebrated ones. In addition to those, an unentangled quantum state can also exhibit nonclassicality, as evidenced from notions such as quantum discord and work deficit. Here, we propose a general framework to investigate nonclassical correlations in multipartite quantum states. The distinct signatures left on observable quantities, depending on whether the sub-parts of a composite system are probed separately or jointly, provide an operational avenue to construct different quantifiers that faithfully capture signatures of nonclassicality in quantum states. Along the line we unveil an intriguing phenomenon referred to as `nonlocal locking of observable quantities', where the value of an observable quantity gets locked in the correlation of a nonclassical state. Our approach reduces the experimental demand for verification of nonclassicality in composite systems and can find applications for enhanced energy storage in quantum thermodynamical devices.</p>
-                </section>
-            </li>
-            <li>
-                <section class="abstract-details">
-                    <h2>SUDIP CHAKRABARTY</h2>
-                    <h3>Affiliation:</h3>
-                    <p>S. N. Bose National Centre for Basic Sciences</p>
-                    <h3>Title of the Talk:</h3>
-                    <p>Efficient detection of non-classicality of continuous variable states using moments of Wigner function  </p>
-                    <h3>Abstract:</h3>
-                    <p>States with negative Wigner function, a significant subclass of non-classical states, serve as a valuable resource for various quantum information processing tasks. Here, we provide a criterion for detecting such quantum states exhibiting negative Wigner function. Our method relies on evaluating moments of the Wigner function which involves computing simple functionals and can be implemented in a real experiment without the need for full state tomography or Wigner function reconstruction. We then provide explicit examples to support our detection scheme. Further, we propose an experimental method utilizing the continuous variable SWAP operator to realize these moments in a real experiment. </p>
-                </section>
-            </li>
-            <li>
-                <section class="abstract-details">
-                    <h2>Samrat Sen</h2>
-                    <h3>Affiliation:</h3>
-                    <p>S. N. Bose National Centre for Basic Sciences </p>
-                    <h3>Title of the Talk:</h3>
-                    <p>Local-Data-Hiding and Causal Inseparability: Probing Indefinite Causal Structures with Cryptographic Primitives </p>
-                    <h3>Abstract:</h3>
-                    <p>Formulation of physical theories typically assumes a definite causal structure -- either static or dynamic -- among the set of physical events. Recent studies, however, suggest the possibility of indefiniteness in causal structure, which emerges as a novel information primitive offering advantages in various protocols. In this work, we explore utilities of this new primitive in cryptographic applications. To this aim, we propose a task called local-data-hiding, where a referee distributes encrypted messages among distant parties in such a way that the parties individually remain completely ignorant about the messages, and thus try to decrypt their respective messages through mutual collaboration. As we demonstrate, agents embedded in an indefinite causal structure can outperform their counterparts operating in a definite causal background. Considering the bipartite local-bit-hiding (LBH) task, we establish a strict duality between its optimal success probability and the optimal violation of a causal inequality obtained from the guess-your-neighbour's-input game. This, in turn, provides a way forward to obtain Tsirelson-type bounds for causal inequalities. Furthermore, similar to Peres's separability criterion, we derive a necessary criterion for quantum processes to be useful in the LBH task. We then report an intriguing super-activation phenomenon, where two quantum processes, each individually not useful for the LBH task, become useful when used together. We also analyze the utility of causal indefiniteness arising in classical setups and show its advantages in multipartite variants of the local-data-hiding task. Along with establishing new cryptographic applications our study illuminates various unexplored aspects of causal indefiniteness, and welcomes further studies on this new information primitive. </p>
-                </section>
-            </li>
-            <li>
-                <section class="abstract-details">
-                    <h2>Arijit Dutta</h2>
-                    <h3>Affiliation:</h3>
-                    <p>Jaypee Institute of Information Technology</p>
-                    <h3>Title of the Talk:</h3>
-                    <p>Certifying quantum state and dimension via phase-space Bell tests for continuous variable systems </p>
-                    <h3>Abstract:</h3>
-                    <p>We investigate generalized Bell tests in phase space for continuous variables that can be used to certify quantum states and witness the dimension of a given state. Our so-called 𝑠-parametrized observables in the Bell tests correspond to measuring excitation (photon) -number distribution in conjunction with phase- space displacements. Specifically, we study three practically important classes of states broadly, i.e. two-mode squeezed states, entangled coherent states and general entangled state with bounded photon numbers. We obtain the degree of optimal violation of Bell tests for each class, which enables us to certify a quantum state yielding a maximal violation. Furthermore, our analysis also makes it possible to witness the dimension of a quantum state, i.e. the photon number, by obtaining the bound of Bell violation for a different total photon number. </p>
-                </section>
-            </li>
-            <li>
-                <section class="abstract-details">
-                    <h2>Hemant  Hegde </h2>
-                    <h3>Affiliation:</h3>
-                    <p>Indian Institute of Technology Dharwad </p>
-                    <h3>Title of the Talk:</h3>
-                    <p>Multi photon operated multimode squeezed vacuum states</p>
-                    <h3>Abstract:</h3>
-                    <p> Non-Gaussian photon added/subtracted states are crucial in the study of quantum information theory because of their distinctive entanglement properties. We study the Hilbert space distance between multimode squeezed vacuum states and their multi-photon added/subtracted counterparts using Bures distance. We arrive at the conditions on the number of photon operations to obtain the bounds of Bures distance for two- and four-mode squeezed vacuum states. Further the bipartite entanglement in multi-photon added/subtracted multimode squeezed vacuum states is studied using entanglement entropy. We show that the bounds of bipartite entanglement are dependent on the photon operations performed on odd and even modes of the two- and four-mode squeezed vacuum states. We arrive at necessary and sufficient conditions to obtain the bounds on these measures in terms of odd and even mode photon operations. This study reveals interesting relation between the bounds of Bures distance and entanglement entropy for multiphoton operated multi-mode states.</p>
-                </section>
-            </li>
-            <li>
-                <section class="abstract-details">
-                    <h2>Kishore Thapliyal</h2>
-                    <h3>Affiliation:</h3>
-                    <p>Palacký University, Olomouc, Czech Republic </p>
-                    <h3>Title of the Talk:</h3>
-                    <p>Quantum state engineering of mesoscopic optical fields using photon  counting  </p>
-                    <h3>Abstract:</h3>
-                    <p> Nonclassical states, having negative Glauber-Sudarshan P-function, do not have a classical analogue.These states have paved way for second quantum revolution and photonic quantum technology. A few examples of generation of such states in nonlinear optical processes and its challenges will be discussed. Photon number measurements and post-selection make a plethora of quantum state engineering operations feasible. Quantum state engineering using non-Gaussian operations provides powerful tool for continuous variable quantum information. Practical challenges in their implementation and feasibility of generation of such states will be discussed [1-4]. Twin beams are generated in a nonlinear optical process, namely spontaneous parametric down conversion, under stronger pumping. They are endowed with ideally perfect photon number correlations in the constituting signal and idler beams. This quantum feature is revealed by the sub-shot noise photon number correlations. However, the marginal signal and idler photon number distributions are multimode thermal. We illustrate the generation of engineered multimode quantum states from twin beams by photon subtraction and addition with supporting experimental realization. Future prospects, in view of our results, will be discussed.</p>
-                </section>
-            </li>
-            <li>
-                <section class="abstract-details">
-                    <h2>Vaisakh Mannalath</h2>
-                    <h3>Affiliation:</h3>
-                    <p>Vigo Quantum Communication Center, Universidad de Vigo, Vigo E-36310, Spain </p>
-                    <h3>Title of the Talk:</h3>
-                    <p>Quantum key distribution with small data block sizes </p>
-                    <h3>Abstract:</h3>
-                    <p>The parameter estimation step in QKD involves statistical analysis of the measurement data sample to ensure that the key distribution remains secure against potential eavesdroppers. Traditional methods often  utilize Serfling inequality [1] or other tail bounds on the hypergeometric distribution [2] to determine the likelihood of deviations from expected values. These bounds may not always yield the tightest possible estimates, particularly in parameter regimes of interest in QKD. Our approach builds on the connection between hypergeometric and binomial distributions [3], allowing us to apply more straightforward and potentially tighter binomial tail bounds to the hypergeometric distribution. </p>
-                </section>
-            </li>
-            <li>
-                <section class="abstract-details">
-                    <h2>Harsh Rathee</h2>
-                    <h3>Affiliation:</h3>
-                    <p>Quantum Measurement Lab, Blackett Laboratory, Imperial College London, London SW7 2BW, United Kingdom </p>
-                    <h3>Title of the Talk:</h3>
-                    <p> Brillouin Optomechanics and it’s Applications </p>
-                    <h3>Abstract:</h3>
-                    <p>Since the 1920s, photon–phonon Brillouin scattering has been a subject of intense and diverse study. This nonlinear optical phenomenon has been observed in numerous physical systems, including bulk crystals, optical fibers , integrated devices such as silicon photonic waveguides , silica micro-sphere resonators, and bulk crystalline resonators . The interaction is now receiving a resurge of interest and its potential to contribute to both classical- and quantum-information-processing applications has recently been identified. The field of Brillouin scattering is now merging with the rapidly growing field of cavity quantum optomechanics. This talk will introduce the basics of optomechanical interaction in a classical and quantum framework. The talk will then focus on cavity quantum optomechanics and its possible applications. The talk will end with a discussion on the recent works from the Quantum Measurement Lab on state preparation by manipulating single quantum phonons, and measurement enhanced laser cooling. </p>
-                </section>
-            </li>
-            <li>
-                <section class="abstract-details">
-                    <h2>Dr. Md Manirul Ali </h2>
-                    <h3>Affiliation:</h3>
-                    <p>Chennai Institute of Technology, Chennai, India</p>
-                    <h3>Title of the Talk:</h3>
-                    <p>Certifying Quantumness in Open Systems Using Leggett-Garg Inequalities</p>
-                    <h3>Abstract:</h3>
-                    <p>I will present on quantum certification in open-system devices using Leggett–
-Garg inequalities (LGI), which test the temporal correlations of a single system
-measured at different times. A violation of the LGI suggests either the breakdown
-of a realistic system description or the impossibility of non-invasive measurements. I will first address the violation of LGI in a two-level system under decoherence in a non-Markovian dephasing environment. Next, I will explore the 
-violation of LGI in a qubit undergoing spontaneous decay in a general non- Markovian dissipative environment. Lastly, I will discuss our recent work, “Quantumness of electron transport in quantum dot devices through Leggett-Garg
-inequalities: A non-equilibrium Green's function approach”. While coherent
-control of electronic states in quantum dot (QD) devices can be achieved using
-nanofabrication techniques, it remains challenging to determine the extent of
-quantum behavior in these devices. LGIs help differentiate between classical and
-quantum transport in nanostructures through two-time correlation functions. By
-detecting local charges at two distinct times, we examine quantum violations of
-the original LGI across varying device configurations and parameters under both
-Markovian and non-Markovian dynamics. Our approach could pave the way for
-exploring quantum signatures in other out-of-equilibrium quantum many-body
-systems. </p>
-                </section>
-            </li>
-            <li>
-                <section class="abstract-details">
-                    <h2>Chitra Shukla </h2>
-                    <h3>Affiliation:</h3>
-                    <p>University of Luxembourg </p>
-                    <h3>Title of the Talk:</h3>
-                    <p>Qline Architecture based Hierarchical Quantum Secret Sharing in Multi-Node Satellite Communication Networks </p>
-                    <h3>Abstract:</h3>
-                    <p> We propose to design a hierarchical quantum secret sharing (HQSS) for multi-node satellite communication network, involving a group of at least four satellites (A, C1, C2, B), leveraging the Qline architecture [1], represents unique topology that features a linear quantum network configuration. Qline architecture provides a physical framework for realizing HQSS. In this setup, the entanglement generation and measurement occur at the end node Satellites A and B, with two intermediate satellite nodes C1 and C2 are limited to single-qubit unitary transforms and measurement in classical basis. This setting will restrict the two intermediate satellites C1 and C2 to allow using lower powers needing the cooperation from each other as well as end node Satellites A and B, however, end node Satellite B utilizes the higher powers to reconstruct the secret without the measurement outcome of one of the lower power intermediate Satellite C1 or C2. The hierarchical structure depends on the trusted (end node Satellite B) or untrusted (intermediate Satellite C1, C2) locations within a satellite quantum network. To be precise, the untrusted (trusted) nodes requiring more (less) number of measurement outcome information to reconstruct the quantum secret, lie lower (higher) in the hierarchy. Our motivation is to use this hierarchical power for long-distance QSS, allowing leading Satellite A to securely share a quantum secret to Satellite B while bypassing one of the intermediate satellites C1 or C2. Satellite A shares a 4-qubit cluster quantum entangled state with Satellites C1, C2 and B to perform HQSS in Qline architecture. The simplicity of hardware at intermediate nodes in the Qline architecture facilitates easier implementation of proposed HQSS for multi-node satellites. Our HQSS model based on Q-line configuration shows that hierarchy [2] with minimal hardware [1, 3] would be the standard requirements in future terrestrial and non-terrestrial quantum networks. Unlike traditional QKD networks, our HQSS design doesn't require key routing through intermediate nodes, enhancing security by avoiding exposure to these nodes, without consuming established keys for routing security. Instead, the established keys can be efficiently consumed by a leading Satellite A to securely distribute the entanglement among intermediate Satellites C1, C2 and end node Satellite B. As the security of key establishment on Qline networks is composable [1], ensuring that established keys can be utilized for secure entanglement distribution executed by Satellite A among inter-satellite quantum communication network, thereby advancing larger constellations securely.</p>
-                </section>
-            </li>
-            <li>
-                <section class="abstract-details">
-                    <h2>Satish Kumar</h2>
-                    <h3>Affiliation:</h3>
-                    <p>Jaypee Institute of Information Technology </p>
-                    <h3>Title of the Talk:</h3>
-                    <p>Quantum remote implementation of hidden or partially unknown operators </p>
-                    <h3>Abstract:</h3>
-                    <p> Two protocols are designed for remote implementation of a quantum operator of a specific form. One is designed to implement a hidden operator remotely and another is to implement a partially unknown operator remotely. The resource used is the two-qubit maximally entangled state, which is entangled in the spatial degree of freedom. Cross-Kerr interaction is used to allow photon-photon interaction. Also, the impact of photon loss due to the interaction is analyzed for both protocols.</p>
-                </section>
-            </li>
-            <li>
-                <section class="abstract-details">
-                    <h2>Britant</h2>
-                    <h3>Affiliation:</h3>
-                    <p>Centre for Development of Advanced Computing, India</p>
-                    <h3>Title of the Talk:</h3>
-                    <p>Quantum Variational Singular value decomposition and its applications. </p>
-                    <h3>Abstract:</h3>
-                    <p>This work proposes a new technique to do singular value decomposition (SVD) via quantum algorithms and its application in quantum image processing (QIP) i.e. image compression and denoising. SVD is a very common technique in classical information processing which is crucial in image compression, noise reduction, and feature extraction. But as we all know finding eigenvalues of a matrix (an inevitable part in SVD) is an np-hard problem for classical computers. So we propose quantum variational singular value decomposition (QVSVD) based on the variational quantum deflation (VQD) algorithm to efficiently compute the singular values of an image matrix. This provides an exponential speedup over classical methods. The study compares quantum and classical SVD, demonstrating improved accuracy in image data. Our results highlight quantum computing's potential in advancing image processing, especially in fields like medical imaging, remote sensing, and multimedia processing. </p>
-                </section>
-            </li>
-                </section>
-            </li>
-        </ol>
+        <!-- Gaps Section -->
+        <section id="gaps">
+            <h2>Closing Gaps in Quantum AI</h2>
+            <p>Our simplified course allows developers, even without a physics background, to easily learn and apply quantum algorithms.</p>
+            <p>Quantum models require less training time on the same computer resources, enhancing productivity and resource efficiency.</p>
+            <p>Enhanced Accuracy: Achieve 5-6% increased accuracy compared to traditional AI and ML models.</p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <h2>Contact Information</h2>
+            <p><strong>Akshay Patil</strong>, Founder and CEO</p>
+            <p>Mob: +91-70308 43496</p>
+            <p>Email: <a href="mailto:akshaypatilakshaypaa@gmail.com">akshaypatilakshaypaa@gmail.com</a></p>
+            <p><strong>Britant</strong>, Co-founder</p>
+            <p>Mob: +91-76419 36626</p>
+            <p>Email: <a href="mailto:britant808@gmail.com">britant808@gmail.com</a></p>
+        </section>
     </div>
 
+    <footer>
+        <p>&copy; 2024 Heisenberg Quantum AI. All rights reserved.</p>
+    </footer>
 </body>
+
 </html>
